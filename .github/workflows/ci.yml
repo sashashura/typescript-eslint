@@ -188,9 +188,9 @@ jobs:
             # lowest possible version
             '3.3.1',
             # somewhere in the middle for sanity check
-            '4.0',
+            '~4.0.8',
             # highest possible version
-            '4.8',
+            '~4.8.2',
           ]
     env:
       # Added the - at the end to function as a separator to improve readability in the PR comment from the Nx cloud app
@@ -239,7 +239,7 @@ jobs:
             # lowest possible version
             '6.0.0',
             # somewhere in the middle for sanity check
-            '7',
+            '~7.32.0',
             # highest possible version
             '^8.0.0',
           ]
