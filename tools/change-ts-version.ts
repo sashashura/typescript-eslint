@@ -1,7 +1,11 @@
 import fs from 'fs';
 import path from 'path';
 import semver from 'semver';
-import packageJson = require('../package.json');
+
+const packageJson = require('../package.json') as {
+  resolutions: Record<string, unknown>;
+  devDependencies: Record<string, unknown>;
+};
 
 const newVersion = semver.valid(semver.coerce(process.argv[2]));
 if (newVersion == null) {
